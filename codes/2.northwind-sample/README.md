@@ -1,27 +1,6 @@
----
-page_type: sample
-description: This sample implements a Teams message extension that can be used as a plugin for Microsoft Copilot for Microsoft 365. The message extension allows users to query the Northwind Database.
-products:
-- office-teams
-- copilot-m365
-languages:
-- typescript
----
+# M365 Copilot Teams Messaging Extension - Northwind Inventory
 
-# Northwind inventory message extension sample
-
-![License.](https://img.shields.io/badge/license-MIT-green.svg)
-
-This sample implements a Teams message extension that can be used as a plugin for Microsoft Copilot for Microsoft 365. The message extension allows users to query the [Northwind Database](https://learn.microsoft.com/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases).
-
-![Screenshot of the sample extension working in Copilot in Microsoft Teams](./lab/images/03-03a-response-on-chai.png)
-
-## Version history
-
-Version|Manifest version|Date|Author|Comments
--------|--|--|----|--------
-1.0|1.16|November 15, 2023 |Bob German <br/> Garry Trinder <br/> Rabia Williams|Initial release for Ignite 2023 labs
-1.1|1.16|December 7, 2023 |Bob German|Parameters are now passed by name not value
+This is a demo code sample for the Microsoft 365 Copilot extension for Teams Messaging Extensions. It is a simple example that uses the Northwind database to demonstrate how to use the messaging extension as a Plugin for Microsoft 365 Copilot.
 
 ## Prerequisites
 
@@ -38,48 +17,8 @@ For instructions on setting up and running the sample, see the [lab exercises](.
 
 Here are some ideas for prompts to try. If you don't get the result you expect, try typing "new chat" and then trying again.
 
-### Single parameter prompts
+## References
 
-- *Find Chai in Northwind Inventory*
+This code repository is created from the [Microsoft 365 Copilot Plugin](https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples) sample named, [Northwind inventory message extension sample](https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-northwind-inventory-ts).
 
-- *Who supplies discounted produce to Northwind?*
-
-- *Find high revenue products in Northwind. Have there been any ad campaigns for these products?*
-
-  > [!NOTE]
-  > The ad campaign details are in the [sample documents](./sampleDocs/).
-
-### Multi-parameter prompts
-
-- *Find northwind dairy products that are low on stock. Show me a table with the product, supplier, units in stock and on order. Reference the details for each product.*
-
-  (then)
-
-  *OK can you draft an email to our procurement team asking them if we've had any delivery issues with these suppliers?*
-
-- *Find Northwind beverages with more than 100 units in stock*
-
-  (then)
-
-  *What are the payment terms for these suppliers?*
-
-  > [!NOTE]
-  > The answer to the 2nd question is in the [sample documents](./sampleDocs/).
-
-- *We’ve been receiving partial orders for Tofu. Find the supplier in Northwind and draft an email summarizing our inventory and reminding them they should stop sending partial orders per our MOQ policy.*
-
-  > [!NOTE]
-  > The MOQ policy is in one of the [sample documents](./sampleDocs/).
-
-- *Northwind will have a booth at Microsoft Community Days  in London. Find products with local suppliers and write a LinkedIn post to promote the booth and products.*
-
-  (then)
-
-  *Emphasize how delicious the products are and encourage people to visit our booth at the conference*
-
-- *What beverage is high in demand due to social media that is low stock in Northwind in London. Reference the product details to update stock.*
-
-  > [!NOTE]
-  > There is a document that discusses a social media campaign for one of the products in the [sample documents](./sampleDocs/).
-
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/officedev-copilot-for-m365-plugins-samples-msgext-northwind-inventory-ts)
+I thank all the contributors to the Microsoft 365 Copilot Plugin samples so that this could be used with the Minimal steps
