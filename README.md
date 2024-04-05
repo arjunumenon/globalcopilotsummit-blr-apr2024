@@ -18,6 +18,12 @@ Pre-requisites for the session are mentioned in each of the demo folders mention
 
 ## Demo Codes
 
+The demo codes used in the session are available in the [`codes`](./codes/1.northwind-sample/) folder.
+
+## Deck
+
+The deck used in the session is available in the [`deck`](./deck/) folder.
+
 ## Complete Agenda
 
 | Speaker | Session Titles | Timings |
